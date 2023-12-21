@@ -52,9 +52,12 @@ def run_discord_bot():
         else:
             print(f"[{timestamp}] [{channel}] {username}: {user_msg}")
         
+        # Direct message
         if user_msg[0] == "?":
             user_msg = user_msg[1:]
             await send_message(message, user_msg, is_private = True)
+
+        # Tagged message
         elif BOT_ID in user_msg:
             user_msg = user_msg.replace(BOT_ID, "")
             await send_message(message, user_msg, is_private = False)
