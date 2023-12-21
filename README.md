@@ -13,6 +13,11 @@ There's no real goal here other than to learn more about making a Discord chat b
     cd Discord
     ```
 
+1. Activate the Environment
+    ```bash
+    source bin/activate
+    ```
+
 1. Upgrade PIP
     ```bash
     pip3 install --upgrade pip
@@ -23,7 +28,7 @@ There's no real goal here other than to learn more about making a Discord chat b
     pip3 install -r requirements.txt
     ```
 
-1. Environmental Variables
+1. Environmental Variables  
     Paste your Bot Token and the Bot ID within the `.env` file:
     ```
     TOKEN=abc123
